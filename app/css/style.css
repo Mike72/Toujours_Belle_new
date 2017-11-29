@@ -1,0 +1,13 @@
+h3{
+    font-family: 'Pacifico', cursive;
+}
+h1, h2{
+    font-family: 'Cookie', cursive;
+}
+.jumbotron{
+    background-image: url("http://www.fabfatale.com/wp-content/uploads/2014/11/thanksgivingManicure2.jpg");
+    background-size: cover;
+    background-position: top center;
+    height: auto;
+    color: white;
+}
