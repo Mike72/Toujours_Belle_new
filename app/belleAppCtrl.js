@@ -10,3 +10,4 @@ var guest = null;
  $scope.guests = [new Guest("Dora", "Hajdu","0525239029", "Dorika1", "123456")];
 
  console.log(JSON.stringify($scope.guests));
+});
