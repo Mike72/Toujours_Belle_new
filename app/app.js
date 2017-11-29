@@ -1,4 +1,4 @@
-var app = ("belleApp",["ngRoute"]);
+var belleApp = angular.module("belleApp",["ngRoute"]);
 
 belleApp.config(function($routeProvider) {
     $routeProvider
