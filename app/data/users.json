@@ -1,0 +1,34 @@
+[{
+    "fname" : "Betty",
+    "lname" : "Kun",
+    "telephone" : "0528338443",
+    "userName" : "Betty",
+    "password" : "Aviel13",
+  "info": "Admin"
+},
+{  
+    
+    "fname" : "Zoltan",
+    "lname" : "Mike",
+    "telephone" : "0528335061",
+    "userName" : "Mike",
+    "password" : "Bubika",
+    "info": "Admin"
+  
+},
+{
+    "fname": "Dora",
+    "lname": "Hajdu",
+    "telephone" :"0525239029", 
+    "userName": "Dorika1",
+    "password": "123456",
+    "info": "Guest"
+ },
+ {
+     "fname": "Aviel",
+     "lname": "Mike",
+     "telephone" :"0525252525", 
+     "userName": "Aviel1",
+     "password": "654321",
+     "info": "Guest"
+ }]
