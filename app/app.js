@@ -1,4 +1,4 @@
-var belleApp = angular.module("belleApp",["ngRoute", "ngAnimate", "ui.bootstrap"]);
+var belleApp = angular.module("belleApp",["ngRoute"]);
 
 belleApp.config(function($routeProvider) {
     $routeProvider
@@ -6,7 +6,8 @@ belleApp.config(function($routeProvider) {
         templateUrl: "app/home/home.html"
     })
     .when("/login", {
-        templateUrl: "app/login/login.html"
+        templateUrl: "app/login/login.html",
+        controller: "loginCtrl"
     })
     .when("/admin", {
         templateUrl: "app/admin/admin.html",

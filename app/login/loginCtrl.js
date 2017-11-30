@@ -1,4 +1,4 @@
-belleApp.controller("loginCtrl" ,function ($scope, $uibModalInstance, $http, $location,activeUser, User){
+belleApp.controller("loginCtrl" ,function ($scope, $http, $location,activeUser, User){
 
 $scope.userName = "Mike";
 $scope.password = "Bubika";
@@ -18,7 +18,7 @@ $scope.password = "Bubika";
             var user = getLoggedInUser();
             if (user != null) {
                 activeUser.login(user);
-                $uibModalInstance.close("Logged-in");
+                
                 $location.path("/admin")
           /*  }else if (user != null && user.info === "Guest"){
                 activeUser.login(user);
