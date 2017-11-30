@@ -1,3 +1,3 @@
-belleApp.controller("registerCtrl", function($scope, $http){
+belleApp.controller("registerCtrl", function($scope, $http, activeUser){
 
 });

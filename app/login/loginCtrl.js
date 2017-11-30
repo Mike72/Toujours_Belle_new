@@ -9,7 +9,7 @@ $scope.password = "Bubika";
             $scope.users.push(new User(response.data[i]));
         }
 
-      //  console.log(JSON.stringify($scope.users));
+      console.log(JSON.stringify($scope.users));
 
     });
     $scope.failedAttempt = false;
@@ -29,7 +29,7 @@ $scope.password = "Bubika";
             }
 
     
-            console.log($scope.userName + " " + $scope.password);
+            console.log(JSON.stringify($scope.userName + " " + $scope.password));
         }
         var getLoggedInUser = function() {
             for (var i = 0; i < $scope.users.length; i++) {

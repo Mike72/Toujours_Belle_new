@@ -4,13 +4,13 @@ h3{
 h1, h2, .navbar-brand{
     font-family: 'Cookie', cursive;
 }
-.jumbotron{
+/*.jumbotron{
     background-image: url("http://www.fabfatale.com/wp-content/uploads/2014/11/thanksgivingManicure2.jpg");
     background-size: cover;
     background-position: top center;
     height: auto;
     color: white;
-}
+}*/
 .after-box{
     clear: both;
     padding-top: 1em;
