@@ -27,11 +27,9 @@ $scope.password = "Bubika";
             }else{
                 $scope.failedAttempt = true;
             }
+
     
-    
-    
-    
-            console.log(JSON.stringify($scope.userName + " " + $scope.password));
+            console.log($scope.userName + " " + $scope.password);
         }
         var getLoggedInUser = function() {
             for (var i = 0; i < $scope.users.length; i++) {
