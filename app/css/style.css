@@ -11,3 +11,7 @@ h1, h2, .navbar-brand{
     height: auto;
     color: white;
 }
+.after-box{
+    clear: both;
+    padding-top: 1em;
+}

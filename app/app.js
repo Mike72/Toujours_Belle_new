@@ -8,4 +8,16 @@ belleApp.config(function($routeProvider) {
     .when("/login", {
         templateUrl: "app/login/login.html"
     })
+    .when("/admin", {
+        templateUrl: "app/admin/admin.html",
+        controller: "adminCtrl"
+    })
+    .when("/register", {
+        templateUrl: "app/register/register.html",
+        controller: "registerCtrl"
+    })
+    .when("/contact", {
+        templateUrl: "app/contactUs/contact.html",
+        controller: "contactCtrl"
+    })
 });

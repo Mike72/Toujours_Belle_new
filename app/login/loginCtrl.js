@@ -1,7 +1,7 @@
 belleApp.controller("loginCtrl" ,function ($scope, $uibModalInstance, $http, $location, User){
 
-$scope.userName = "Mike";
-$scope.password = "Bubika";
+/*$scope.userName = "Mike";
+$scope.password = "Bubika";*/
 
     $http.get("app/data/users.json").then(function (response) {
         $scope.users = [];
