@@ -24,6 +24,7 @@
     <script src="app/admin/adminCtrl.js"></script>
     <script src="app/register/registerCtrl.js"></script>
     <script src="app/contactUs/contactCtrl.js"></script>
+    <script src="app/guest/guestCtrl.js"></script>
     <link href="app/css/style.css" rel="stylesheet">
 
 </head>
@@ -45,22 +46,17 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
        <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                <li>
-                    <a href="#!/contact">Contact Us</a>
+                <li ng-show="isLoggedIn()"><a href="#!/contact">Contact Us</a>
                 </li>
-                <li>
-                    <a href="#!/galleria">Galleria</a>
+                <li ng-show="isLoggedIn()"><a href="#!/galleria">Galleria</a>
                 </li>
-                <li>
-                    <a href="#!/about">About Us</a>
+                <li ng-show="isLoggedIn()"><a href="#!/about">About Us</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li >
-                    <a href="#!/login">Login</a>
+                <li ng-hide="isLoggedIn()"><a href="#!/login">Login</a>
                 </li>
-                <li >
-                    <a href="#">Logout</a>
+                <li ng-show="isLoggedIn()"><a href="#">Logout</a>
                 </li>
             </ul>
         </div>

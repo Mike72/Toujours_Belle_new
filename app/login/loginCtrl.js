@@ -1,4 +1,4 @@
-belleApp.controller("loginCtrl" ,function ($scope, $uibModalInstance, $http, $location, User){
+belleApp.controller("loginCtrl" ,function ($scope, $uibModalInstance, $http, $location,activeUser, User){
 
 $scope.userName = "Mike";
 $scope.password = "Bubika";
@@ -16,14 +16,14 @@ $scope.password = "Bubika";
     
         $scope.login = function() {
             var user = getLoggedInUser();
-            if (user != null && user.info === "Admin") {
+            if (user != null) {
                 activeUser.login(user);
                 $uibModalInstance.close("Logged-in");
                 $location.path("/admin")
-            }else if (user != null && user.info === "Guest"){
+          /*  }else if (user != null && user.info === "Guest"){
                 activeUser.login(user);
                 $uibModalInstance.close("Logged-in");
-                $location.path("/admin")
+                $location.path("/guest")*/
             }else{
                 $scope.failedAttempt = true;
             }
@@ -31,8 +31,19 @@ $scope.password = "Bubika";
     
     
     
-            console.log($scope.userName + " " + $scope.password)
+            console.log(JSON.stringify($scope.userName + " " + $scope.password));
         }
-
+        var getLoggedInUser = function() {
+            for (var i = 0; i < $scope.users.length; i++) {
+                if ($scope.users[i].userName === $scope.userName && $scope.users[i].password === $scope.password) {
+                    return $scope.users[i];
+                }
+            }
+            return null;
+        }
+    
+        $scope.dismiss = function () {
+            $uibModalInstance.close("User dismissed");
+        }
 
 });
