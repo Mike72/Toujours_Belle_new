@@ -25,4 +25,7 @@ belleApp.config(function($routeProvider) {
         templateUrl: "app/guest/guest.html",
         controller: "guestCtrl"
     })
+    .when("/about", {
+        templateUrl: "app/aboutUs/about.html"
+    })
 });
