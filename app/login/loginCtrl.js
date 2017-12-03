@@ -1,7 +1,7 @@
-belleApp.controller("loginCtrl" ,function ($scope, $http, $location,activeUser, User){
+belleApp.controller("loginCtrl" ,function ($scope, $http, $location,activeUser, User,){
 
-$scope.userName = "Mike";
-$scope.password = "Bubika";
+// $scope.userName = "Mike";
+// $scope.password = "Bubika";
 
     $http.get("app/data/users.json").then(function (response) {
         $scope.users = [];
@@ -19,7 +19,7 @@ $scope.password = "Bubika";
             if (user != null) {
                 activeUser.login(user);
                 
-                $location.path("/admin")
+                $location.path("/guest")
           /*  }else if (user != null && user.info === "Guest"){
                 activeUser.login(user);
                 $uibModalInstance.close("Logged-in");
@@ -33,11 +33,22 @@ $scope.password = "Bubika";
         }
         var getLoggedInUser = function() {
             for (var i = 0; i < $scope.users.length; i++) {
-                if ($scope.users[i].userName === $scope.userName && $scope.users[i].password === $scope.password) {
+                if ($scope.users[i].userName === $scope.userName && 
+                    $scope.users[i].password === $scope.password) {
                     return $scope.users[i];
                 }
             }
             return null;
+        }
+
+        var userType = function(){
+            for (var i = 0; i < $scope.user.length; i++) {
+                if ($scope.user[i].info === "Admin") {
+                    console.log(JSON.stringify($scope.info));
+                }else{
+                    console.log("Guest");
+                }
+            }
         }
     
         $scope.dismiss = function () {
