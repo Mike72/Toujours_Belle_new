@@ -1,3 +1,33 @@
 <h1>Hello:{{user.fname}}</h1>
 
 From: <input type="date" ng-model="fromDate" />
+
+<div style="margin-bottom: 1em; display: block;" class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+    <table class="table ">
+        <tr>
+            <th ng-click="sortBy( 'day') ">Sunday</th>
+            <th ng-click="sortBy( 'day') ">Monday</th>
+            <th ng-click="sortBy( 'day') ">Tuesday</th>
+            <th ng-click="sortBy( 'day') ">Wednesday</th>
+            <th ng-click="sortBy( 'day') ">Thursday</th>
+            <th ng-click="sortBy( 'day') ">Friday</th>
+            <th ng-click="sortBy( 'day') ">Saturday</th>
+
+        </tr>
+
+        <ul ng-repeat=" hour in hours | filter : query | orderBy : orderProp">
+
+          <!--  <td>{{5+3}}</td>
+            <td>{{week.[1]}}</td>
+            <td>{{week.[2]}}</td>
+            <td>{{week.[3]}}</td>
+            <td>{{week.[4]}}</td>
+            <td>{{week.[5]}}</td>
+            <td>{{week.[6]}}</td>-->
+          </ul>
+
+          
+    </table>
+
+
+</div>

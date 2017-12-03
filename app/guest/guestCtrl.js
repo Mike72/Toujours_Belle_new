@@ -20,4 +20,31 @@ belleApp.controller("guestCtrl", function($scope,$location, $http, activeUser, U
     }, function myError(response) {
         alert("error" + JSON.stringify(response.status));
       })
+
+      function Week(day){
+        this.day = day;
+      }
+      $scope.weeks =[];
+
+      $http.get("app/data/treatmentDays.json").then(function mySuccess(response){
+        for (var i = 0; i<response.data.length; i++){
+          $scope.weeks.push(new Week(response.data[i]))
+        }
+
+        console.log(JSON.stringify($scope.weeks));
+      })
+
+      function Hour(hour){
+        this.hour = hour;
+      }
+      $scope.hours =[];
+
+      $http.get("app/data/appointments.json").then(function mySuccess(response){
+        for (var i = 0; i<response.data.length; i++){
+          $scope.hours.push(new Hour(response.data[i]))
+        }
+
+        console.log(JSON.stringify($scope.hours));
+      })
+      
 });

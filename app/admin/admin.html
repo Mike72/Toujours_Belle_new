@@ -15,34 +15,35 @@
                 <tr>
                     <th ng-click="sortBy( 'index') ">Number</th>
                     <th ng-click="sortBy( 'fname') ">First Name</th>
-                    <th ng-click="sortBy( 'lname') ">Last Name</th> 
+                    <th ng-click="sortBy( 'lname') ">Last Name</th>
                     <th ng-click="sortBy( 'telephone') ">Telephone</th>
                     <th ng-click="sortBy( 'userName') ">User Name</th>
                     <th ng-click="sortBy( 'password') ">Password</th>
-                   
-                    
+
+
                 </tr>
 
                 <tr ng-repeat="guest in guests | filter : query | orderBy : orderProp">
 
                     <td>{{ $index + 1 }}</td>
                     <td>{{guest.fname}}</td>
-                    <td>{{guest.lname}}</td> 
+                    <td>{{guest.lname}}</td>
                     <td>{{"+972/ " + guest.telephone}}</td>
                     <td>{{guest.userName}}</td>
                     <td>{{guest.password}}</td>
-                   
+
                 </tr>
             </table>
 
 
         </div>
         <div class="container col-sm-offset-2 col-sm-10">
-                <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal">
-                    <a href="#">
-                        <span class="glyphicon glyphicon-user" data-target="#myModal"></span>Register</a>
-                </button>
-        <button type="button" class="btn btn-lg glyphicon glyphicon-user" ng-click="addGuest()">Add Guest</button>
+            <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#myModal">
+                <a href="#">
+                    <span class="glyphicon glyphicon-user" data-target="#myModal"></span>Register</a>
+            </button>
+            <button type="button" class="btn btn-lg glyphicon glyphicon-user" ng-click="addGuest()">Add Guest</button>
         </div>
 
     </div>
+</div>
