@@ -1,33 +1,55 @@
-<h1>Hello:{{user.fname}}</h1>
+<div class="container">
 
-From: <input type="date" ng-model="fromDate" />
-
-<div style="margin-bottom: 1em; display: block;" class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-    <table class="table ">
-        <tr>
-            <th ng-click="sortBy( 'day') ">Sunday</th>
-            <th ng-click="sortBy( 'day') ">Monday</th>
-            <th ng-click="sortBy( 'day') ">Tuesday</th>
-            <th ng-click="sortBy( 'day') ">Wednesday</th>
-            <th ng-click="sortBy( 'day') ">Thursday</th>
-            <th ng-click="sortBy( 'day') ">Friday</th>
-            <th ng-click="sortBy( 'day') ">Saturday</th>
-
-        </tr>
-
-        <ul ng-repeat=" hour in hours | filter : query | orderBy : orderProp">
-
-          <!--  <td>{{5+3}}</td>
-            <td>{{week.[1]}}</td>
-            <td>{{week.[2]}}</td>
-            <td>{{week.[3]}}</td>
-            <td>{{week.[4]}}</td>
-            <td>{{week.[5]}}</td>
-            <td>{{week.[6]}}</td>-->
-          </ul>
-
-          
-    </table>
+    <div class="jumbotron">
+        <div class="container">
 
 
-</div>
+
+            <h1>Hello:{{activeUser.fname}}</h1>
+
+            Time Order:
+            <input type="date" ng-model="fromDate" />
+            <form class="form-inline" role="form">
+                <div class="form-group">
+                    <label for="sel1">Select Treatment :</label>
+
+
+                    <select class="form-control" id="sel1">
+                        <option>Select One</option>
+                        <option>Pedicure</option>
+                        <option>Manicure</option>
+                        <option>Face</option>
+                    </select>
+            </form>
+            <br>
+            <br>
+
+            <div style="margin-bottom: 1em; display: block;" class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                <table class="table ">
+                    <tr>
+
+                        <!--  <th>{{days[i]}}</th>-->
+                        <th>Hours</th>
+                        <th ng-repeat="day in weeks">{{day}}</th>
+
+                    </tr>
+                    <tr ng-repeat="hour in hours">
+                        <td>{{hour}}</td>
+                        <td ng-repeat="day in weeks" ng-click="makeAppt(day, hour, order)">{{apptData(day, hour, order)}}</td>
+
+                      <th data-ng-repeat="order in orders">{{order.type + " " + order.name}}
+                         <!--   <td> {{order.type}}</td>
+                            <td> {{order.name}}</td>
+                           <!-- <td ng-repeat="day in weeks" ng-click="makeAppt(day, hour)">{{orderData(type,name)}}</td>-->
+
+                        </th>
+                    </tr>
+
+                </table>
+
+
+            </div>
+
+            </div>
+        </div>
+    </div>

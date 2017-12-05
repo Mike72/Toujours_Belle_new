@@ -1,0 +1,50 @@
+[
+    {
+        "day": "Sunday",
+        "hour": "09:00",
+        "type": "Pedicure",
+        "name": "Liza"
+    },
+    {
+        "day": "Monday",
+        "hour": "10:00",
+        "type": "Pedicure",
+        "name": "Tina"
+    },
+    {
+        "day": "Tuesday",
+        "hour": "12:00",
+        "type": "Manicure",
+        "name": "Pnina"
+    },
+    {
+        "day": "Wednesday",
+        "hour": "14:00",
+        "type": "Manicure",
+        "name": "Joe"
+    },
+    {
+        "day": "Wednesday",
+        "hour": "11:00",
+        "type": "Face",
+        "name": "Jack"
+    },
+    {
+        "day": "Friday",
+        "hour": "15:00",
+        "type": "Pedicure",
+        "name": "Rosali"
+    },
+    {
+        "day": "Monday",
+        "hour": "16:00",
+        "type": "Manicure",
+        "name": "Olivia"
+    },
+    {
+        "day": "Tuesday",
+        "hour": "13:00",
+        "type": "Face",
+        "name": "Dora"
+    }
+]
