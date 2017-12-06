@@ -40,6 +40,15 @@ belleApp.controller("loginCtrl" ,function ($scope, $http, $location,activeUser, 
             }
             return null;
         }
+        $scope.userType = function(){
+            for(var i = 0; i < $scope.users.length; i++) {
+                if($scope.users[i].info === "Admin") {
+               $location.path("/admin")
+            }else{
+                $location.path("/guest");
+            }
+        }
+    }
 
         var userType = function(){
             for (var i = 0; i < $scope.user.length; i++) {
