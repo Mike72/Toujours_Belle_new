@@ -28,4 +28,10 @@ belleApp.config(function($routeProvider) {
     .when("/about", {
         templateUrl: "app/aboutUs/about.html"
     })
+    .when("/galery", {
+        templateUrl: "app/galery/galery.html"
+    })
+    .when("/winter", {
+        templateUrl: "app/galery/winter.html"
+    })
 });
