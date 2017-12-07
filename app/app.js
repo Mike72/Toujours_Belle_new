@@ -34,4 +34,7 @@ belleApp.config(function($routeProvider) {
     .when("/winter", {
         templateUrl: "app/galery/winter.html"
     })
+    .when("/summer", {
+        templateUrl: "app/galery/summer.html"
+    })
 });
