@@ -1,7 +1,7 @@
 [{
     "fname" : "Betty",
     "lname" : "Kun",
-    "telephone" : "0528338443",
+    "telephone" : "052-8338443",
     "userName" : "Betty",
     "password" : "Aviel13",
      "info": "Admin"
@@ -10,7 +10,7 @@
     
     "fname" : "Zoltan",
     "lname" : "Mike",
-    "telephone" : "0528335061",
+    "telephone" : "052-8335061",
     "userName" : "Mike",
     "password" : "Bubika",
     "treatment": "Pedicure",
@@ -20,7 +20,7 @@
 {
     "fname": "Dora",
     "lname": "Hajdu",
-    "telephone" :"0525239029", 
+    "telephone" :"052-5239029", 
     "userName": "Dorika1",
     "password": "123456",
     "treatment": "Face",
@@ -29,7 +29,7 @@
  {
      "fname": "Aviel",
      "lname": "Mike",
-     "telephone" :"0525252525", 
+     "telephone" :"052-5252525", 
      "userName": "Aviel1",
      "password": "654321",
      "treatment": "Manicure",
