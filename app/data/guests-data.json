@@ -13,4 +13,20 @@
      "userName": "Aviel1",
      "password": "654321",
      "info": "Guest"
+},
+{
+    "fname": "Liza",
+    "lname": "Markovits",
+    "telephone" :"0525252525", 
+    "userName": "Liza",
+    "password": "123456",
+    "info": "Guest"
+},
+{
+    "fname": "Pnina",
+    "lname": "Pnina",
+    "telephone" :"0525252525", 
+    "userName": "Pnina",
+    "password": "123456",
+    "info": "Guest"
 }]

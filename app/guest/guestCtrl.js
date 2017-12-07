@@ -23,10 +23,10 @@ belleApp.controller("guestCtrl", function ($scope, $location, $http, activeUser,
     alert("error" + JSON.stringify(response.status));
   })
 
-  function Order(day, hour, type, name) {
+  function Order(day, hour, treatment, name) {
     this.day = day;
     this.hour = hour;
-    this.type = type;
+    this.treatment = treatment;
     this.name = name;
   }
 
@@ -88,12 +88,15 @@ belleApp.controller("guestCtrl", function ($scope, $location, $http, activeUser,
   $scope.apptData = function (day, hour) {
     for(var i = 0; i < $scope.orders.length; i++) {
       if ($scope.orders[i].day === day && $scope.orders[i].hour === hour) {
-        return $scope.orders[i].type + ": " + $scope.orders[i].name;
+        return $scope.orders[i].treatment + ": " + $scope.orders[i].name;
       }
     }
 
     return "free";
     
+
+$scope.treatment = "Select Treatment";
+
     /*
     if ($scope.day[i] === orders[k].day &&
       hours[j] === orders[k].hour) {
