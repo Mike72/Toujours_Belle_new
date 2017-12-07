@@ -4,6 +4,7 @@
     "telephone" :"0525239029", 
     "userName": "Dorika1",
     "password": "123456",
+    "treatment": "Face",
     "info": "Guest"
  },
  {
@@ -12,6 +13,7 @@
      "telephone" :"0525252525", 
      "userName": "Aviel1",
      "password": "654321",
+     "treatment": "Manicure",
      "info": "Guest"
 },
 {
@@ -20,6 +22,7 @@
     "telephone" :"0525252525", 
     "userName": "Liza",
     "password": "123456",
+    "treatment": "Pedicure",
     "info": "Guest"
 },
 {
@@ -28,5 +31,6 @@
     "telephone" :"0525252525", 
     "userName": "Pnina",
     "password": "123456",
+    "treatment": "Face",
     "info": "Guest"
 }]

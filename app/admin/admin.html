@@ -1,11 +1,12 @@
 <div class="container" ng-controller="adminCtrl">
     <h1 style="text-align: center; margin-bottom: 2em;">Our Guests</h1>
     <div style="margin: 2em;">
-        Search:
+        Search Name:
         <input type="search" ng-model="query.fname" /> Order By:
         <select ng-model="orderProp">
             <option value="fname">First Name</option>
             <option value="lname">Last Name</option>
+            <option value="treatment">Treatment</option>
         </select>
     </div>
     <div class="row">
@@ -16,9 +17,11 @@
                     <th ng-click="sortBy( 'index') ">Number</th>
                     <th ng-click="sortBy( 'fname') ">First Name</th>
                     <th ng-click="sortBy( 'lname') ">Last Name</th>
-                    <th ng-click="sortBy( 'telephone') ">Telephone</th>
+                    <th ng-click="sortBy( 'telephone') ">Telephone</th>  
+                    <th ng-click="sortBy( 'treatment') ">Treatment</th>
                     <th ng-click="sortBy( 'userName') ">User Name</th>
                     <th ng-click="sortBy( 'password') ">Password</th>
+                 
 
 
                 </tr>
@@ -29,6 +32,7 @@
                     <td>{{guest.fname}}</td>
                     <td>{{guest.lname}}</td>
                     <td>{{"+972/ " + guest.telephone}}</td>
+                    <td>{{guest.treatment}}</td>
                     <td>{{guest.userName}}</td>
                     <td>{{guest.password}}</td>
 
